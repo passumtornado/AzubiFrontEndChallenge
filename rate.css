@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,100;1,600&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+	height: 100vh;
+	background: #131518;
+}
+
+.container{
+   display: flex;
+   flex-direction: column;
+   row-gap: 2rem;
+   width: 412px;
+   height: 416px;
+   background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+   border-radius: 30px;
+   margin-left:auto;
+   margin-right: auto;
+   transform: translateY(25%);
+   padding: 2rem 1.5rem;
+}
+.rate-star{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 42px;
+	height: 48px;
+	border-radius: 50%;
+	background: #262E38;
+}
+.rate-text{
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+	width: 100%;
+}
+ h1{
+	font-family: 'Overpass';
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 35px;
+	color: #FFFFFF;
+}
+p{
+	font-family: 'Overpass';
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 24px;
+	color: #969FAD;
+}
+.form-container form{
+	display: flex;
+	flex-direction: column;
+	row-gap: 2rem;
+}
+.form-group-one{
+	display: flex;
+	column-gap: 2rem;
+}
+.radio-form{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	background: #262E38;
+	color: #7C8798;
+	cursor: pointer;
+}
+.radio-form:hover{
+	background: #FC7614;
+	color: #ffffff;
+}
+[type='radio'] {
+  opacity: 0;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.radio-form label{
+	position: absolute;
+    text-align: center;
+	font-family: 'Overpass';
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 0.2px;
+}
+
+.btn{
+	width: 100%;
+	padding: .8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #FC7614;
+    border-radius: 22.5px;
+    font-family: 'Overpass';
+    outline: none;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+	font-size: 15px;
+	line-height: 19px;
+	letter-spacing: 2px;
+}
+.btn:hover{
+	background: #FFFFFF;
+	color: #FC7614;
+}
+.pay{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 2rem;
+}
+.text-show{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #262E38;
+    border-radius: 22.5px;
+    padding:.3rem 1.5rem;
+}
+.pay h3{
+    font-family: 'Overpass';
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 24px;
+	text-align: center;
+	color: #FC7614;
+}
+.thanks-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 1rem;
+	width: 100%;
+}
+.thanks-text p{
+	text-align: center;
+}
+
+@media screen and (max-width: 768px){
+	.container{
+		width: 360px;
+		/*height: 360px;*/
+		transform: translateY(15%);
+	}
+	.radio-form{
+		width: 42px;
+		height: 42px;
+	}
+	.btn{
+		padding: .6rem;
+	}
+}

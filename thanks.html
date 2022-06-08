@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Link styles -->
+	<link rel="stylesheet" type="text/css" href="rate.css">
+	<!-- Link script files -->
+	<!-- <script  src="rate.js" defer></script> -->
+	<title>Interactive Rating</title>
+</head>
+<body>
+   <div class="container">
+ 	<div class="pay">
+ 	 <img src="./assets/pay.png" alt="pay-image" />	
+ 	 <div class="text-show">
+ 	 	<h3 class="thankText">You selected 4 out 5</h3>
+ 	 </div>
+ 	</div>
+ 	<div class="thanks-text ">
+ 		<h1>Thank you!</h1>
+ 		<p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+ 	</div>
+ </div>	
+
+ <script>
+ 	let rating = window.location.search
+ 	let h3Text = document.querySelector('.thankText');
+ 	h3Text.innerText = `You haves selected ${rating.toString().replace('?rate=',' ')} out 5` 
+ </script>
+</body>
+</html>
